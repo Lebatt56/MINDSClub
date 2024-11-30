@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝙼𝙸𝙽𝙳𝚂 𝙲𝚕𝚞𝚋 - Membership</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="logo\favicon.ico\favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="logo\favicon.ico\favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="logo\favicon.ico\apple-touch-icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            background: #f9f9f9;
+            color: #333;
+        }
+        header, footer {
+            background: #1d3557;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        header a, footer a {
+            color: #a8dadc;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+        h1 {
+            text-align: center;
+            color: #1d3557;
+            margin-bottom: 1rem;
+        }
+        .membership-benefits, .join-section {
+            margin-top: 2rem;
+        }
+        .membership-benefits ul {
+            list-style: disc;
+            padding-left: 1.5rem;
+        }
+        .join-section form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .join-section form input, .join-section form textarea, .join-section form button {
+            padding: 0.8rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .join-section form button {
+            background: #457b9d;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .join-section form button:hover {
+            background: #1d3557;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="index.html">Back to Homepage</a>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <h1>Become a Member</h1>
+        <section class="membership-benefits">
+            <h2>Membership Benefits</h2>
+            <ul>
+                <li>Access to exclusive workshops and events</li>
+                <li>Opportunities to collaborate on exciting projects</li>
+                <li>Networking with professionals in data science and IT</li>
+                <li>Priority access to training and resources</li>
+            </ul>
+        </section>
+        
+        <section class="join-section">
+            <h2>Join Now</h2>
+            <p>Fill out the form below to apply for membership:</p>
+            <form action="submit_membership.php" method="POST">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <textarea name="reason" placeholder="Why do you want to join?" rows="5" required></textarea>
+                <button type="submit">Submit Application</button>
+            </form>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 𝙼𝙸𝙽𝙳𝚂 𝙲𝚕𝚞𝚋. All rights reserved. <a href="contact.html">Contact Us</a></p>
+    </footer>
+</body>
+</html>
